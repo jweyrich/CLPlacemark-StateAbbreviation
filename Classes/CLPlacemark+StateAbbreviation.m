@@ -29,8 +29,9 @@ static NSDictionary *abbreviationsDict = nil;
 
 - (NSString *)stateAbbreviation
 {
-	return [self stateAbbreviationFromStateName:self.administrativeArea
-							  andISOCountryCode:self.ISOcountryCode];
+	NSString *result = [self stateAbbreviationFromStateName:self.administrativeArea
+                                          andISOCountryCode:self.ISOcountryCode];
+	return result ? result : self.administrativeArea;
 }
 
 
