@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = '0.1.0'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/jweyrich/#{s.name}"
-  s.author       = 'Jardel Weyrich' => 'jweyrich@gmail.com'
+  s.author       = { 'Jardel Weyrich' => 'jweyrich@gmail.com' }
   s.summary      = '...'
   s.source       = { :git => "https://github.com/jweyrich/#{s.name}.git",
                      :tag => "v#{s.version}" }
